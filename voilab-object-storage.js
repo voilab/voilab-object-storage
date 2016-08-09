@@ -125,6 +125,14 @@
          */
         os.upload = os.uploadFromUri;
 
+        os.getFiles = function (cb) {
+            client.getFiles(config.container, cb);
+        };
+
+        os.getFile = function (filename, cb) {
+            client.getFile(config.container, filename, cb);
+        };
+
         return os;
     };
 }());

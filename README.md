@@ -17,6 +17,10 @@ This library expose 3 simple functions to upload files from different sources:
 - uploadFromPath()
 - uploadFromBuffer()
 
+And 2 others to access files in a container:
+- getFiles()
+- getFile()
+
 ## Check the code
 
 If you want to know more about this library, just have a look at the code. There is nothing very tricky.
