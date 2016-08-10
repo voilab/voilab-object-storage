@@ -26,11 +26,7 @@
                 });
 
                 stream.on('success', function (file) {
-                    // ensure staticUrl ends with /
-                    if (config.staticUrl.slice(-1) !== '/') {
-                        config.staticUrl = config.staticUrl + '/';
-                    }
-                    cb(null, config.staticUrl + file.name);
+                    cb(null, '/' + file.name);
                 });
 
                 return stream;
