@@ -43,7 +43,7 @@
          * @param  {Function} progress
          */
         os.uploadFromUri = function (source, remote, callback, progress) {
-            var http = require('http'),
+            var http = require('http' + (config.ssl ? 's' : '')),
 
                 writeStream = getUploadStream(remote, callback),
 
