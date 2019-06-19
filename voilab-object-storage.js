@@ -128,6 +128,10 @@
         os.getFile = function (filename, cb) {
             client.getFile(config.container, filename, cb);
         };
+        
+        os.getClient = function () {
+            return client;
+        };
 
         return os;
     };
