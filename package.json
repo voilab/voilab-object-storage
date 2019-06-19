@@ -1,5 +1,8 @@
 {
-  "name": "voilab-object-storage",
+  "name": "@voilab/voilab-object-storage",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.1.6",
   "description": "Library that handle file upload on a cloud storage.",
   "main": "voilab-object-storage.js",
