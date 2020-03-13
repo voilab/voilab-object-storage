@@ -12,7 +12,10 @@
                 username: config.username,
                 password: config.password,
                 authUrl: config.authUrl,
-                region: config.region
+                tenantId: config.tenantId,
+                domainId: config.domainId,
+                region: config.region,
+                keystoneAuthVersion: config.authVersion
             }),
 
             getUploadStream = function (remote, cb) {
@@ -128,7 +131,7 @@
         os.getFile = function (filename, cb) {
             client.getFile(config.container, filename, cb);
         };
-        
+
         os.getClient = function () {
             return client;
         };
