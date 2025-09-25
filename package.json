@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Library that handle file upload on a cloud storage.",
   "main": "voilab-object-storage.js",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "streamifier": "^0.1.1",
-    "pkgcloud": "^1.1.0"
+    "pkgcloud": "^2.2.0"
   },
   "author": "Joël Poulin",
   "license": "MIT",
